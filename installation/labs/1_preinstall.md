@@ -143,8 +143,11 @@ always madvise [never]
 172.31.34.191   ec2-54-93-234-85.eu-central-1.compute.amazonaws.com
 ```
 7. Show the nscd service is running
+
 yum install -y nscd
+
 systemctl enable nscd
+
 systemctl start nscd
 
 ```
@@ -170,8 +173,11 @@ Oct 16 14:51:57 ip-172-31-36-238 nscd[17895]: 17895 checking for monitored file 
 ```
 
 8.Show the ntpd service is running
+
 yum install -y ntp
+
 systemctl enable ntpd
+
 systemctl start ntpd
 
 ```
