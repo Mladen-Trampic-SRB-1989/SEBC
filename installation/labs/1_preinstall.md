@@ -17,13 +17,13 @@ Swappiness on nodes:
 ip-172-31-36-238
 1
 ip-172-31-34-41
-30
+1
 ip-172-31-39-153
-30
+1
 ip-172-31-46-152
-30
+1
 ip-172-31-34-191
-30
+1
 ```
 
 * Set the value to `1` if necessary
