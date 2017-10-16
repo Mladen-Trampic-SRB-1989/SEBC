@@ -31,7 +31,7 @@ ip-172-31-41-58
 ```
 [centos@ip-172-31-36-238 ~]$ cat private_IPs.txt | while read line; do
 ssh -tt $line << 'EOF'
-sudo sysctl vm.swappiness=1
+sudo sysctl -w vm.swappiness=1
 echo "vm.swappiness=1" | sudo tee --append /etc/sysctl.conf
 exit
 EOF
