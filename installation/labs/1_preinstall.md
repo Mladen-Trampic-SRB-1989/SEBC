@@ -21,6 +21,7 @@ ip-172-31-46-152
 ip-172-31-34-191
 30
 ```
+
     * Set the value to `1` if necessary
 	```
 	[centos@ip-172-31-36-238 ~]$ cat private_IPs.txt | while read line; do
