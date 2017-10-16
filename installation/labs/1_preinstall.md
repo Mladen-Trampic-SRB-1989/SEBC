@@ -1,4 +1,4 @@
-1. Check `vm.swappiness` on all your nodes
+## 1. Check `vm.swappiness` on all your nodes
 
 ```
 vi private_IPs.txt
@@ -38,7 +38,7 @@ EOF
 done
 ```
 
-2. Show the mount attributes of all volumes
+## 2. Show the mount attributes of all volumes
 
 ```
 [root@ip-172-31-33-245 ~]# mount
@@ -87,7 +87,7 @@ tmpfs          tmpfs     1.5G     0  1.5G   0% /run/user/0
 /dev/xvdb1     ext4       37G   49M   35G   1% /1
 /dev/xvdc1     ext4       37G   49M   35G   1% /2
 ```
-3. Show the reserve space of any non-root, ext-based volumes
+## 3. Show the reserve space of any non-root, ext-based volumes
 
 ```
 [root@ip-172-31-33-245 ~]# dumpe2fs -h /dev/xvdb1
@@ -195,13 +195,13 @@ Journal sequence:         0x00000002
 Journal start:            1
 ```
 
-*Tuning
+* Tuning
 ```
 tune2fs -m0 /dev/xvdb1
 tune2fs -m0 /dev/xvdc1
 
 ```
-4. Disable transparent hugepage support
+## 4. Disable transparent hugepage support
 
 Created systemd service, /etc/systemd/system/disable-transparent-huge-pages.service
 With content:
@@ -240,7 +240,7 @@ always madvise [never]
 always madvise [never]
 ```
 
-5. List your network interface configuration
+## 5. List your network interface configuration
 
 ```
 [root@ip-172-31-36-238 ~]# ip addr
@@ -259,7 +259,7 @@ always madvise [never]
 
 ```
 
-6. List forward and reverse host lookups using getent or nslookup
+## 6. List forward and reverse host lookups using getent or nslookup
 ```
 [root@ip-172-31-36-238 ~]# getent hosts ec2-18-196-2-63.eu-central-1.compute.amazonaws.com
 172.31.36.238   ec2-18-196-2-63.eu-central-1.compute.amazonaws.com
@@ -272,7 +272,7 @@ always madvise [never]
 [root@ip-172-31-36-238 ~]# getent hosts ec2-54-93-234-85.eu-central-1.compute.amazonaws.com
 172.31.34.191   ec2-54-93-234-85.eu-central-1.compute.amazonaws.com
 ```
-7. Show the nscd service is running
+## 7. Show the nscd service is running
 
 yum install -y nscd
 
@@ -302,7 +302,7 @@ Oct 16 14:51:38 ip-172-31-36-238 systemd[1]: Started Name Service Cache Daemon.
 Oct 16 14:51:57 ip-172-31-36-238 nscd[17895]: 17895 checking for monitored file `/etc/netgroup': No such file or directory
 ```
 
-8.Show the ntpd service is running
+## 8.Show the ntpd service is running
 
 yum install -y ntp
 
