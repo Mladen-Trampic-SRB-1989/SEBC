@@ -1,4 +1,4 @@
-#Modifications explained:
+# Modifications explained:
 
 * Job was submited as user, that i previously created Mladen-Trampic-SRB-1989 linux/hdfs.
   * made small modification to write teragen / terasort output in my hdfs home dir.
@@ -12,7 +12,7 @@ started job with command:
  nohup bash YARNtest.sh 2>&1 | tee nohup.out &
 ``` 
 
-##took a coffie, while it finishes. :)
+## took a coffie, while it finishes. :)
 
 ```
 #!/bin/sh
