@@ -75,6 +75,7 @@ FSCK ended at Tue Oct 17 11:17:36 UTC 2017 in 2 milliseconds
 The filesystem under path '/user/Mladen-Trampic-SRB-1989/teragen-input' is HEALTHY
 ```
 
+
      * Target directory
 	 
 ```
