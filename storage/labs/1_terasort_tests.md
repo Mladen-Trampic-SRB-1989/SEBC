@@ -37,7 +37,7 @@
    hdfs_testing
   ```
   
- *Output of Command:
+ * Output of Command:
  ```
   17/10/17 12:00:06 INFO mapreduce.Job: Job job_1508186980909_0003 completed successfully
   17/10/17 12:00:06 INFO mapreduce.Job: Counters: 31
