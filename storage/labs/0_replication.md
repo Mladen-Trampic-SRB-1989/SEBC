@@ -13,9 +13,10 @@ other's nodes.
     * HADOOP_USER_NAME=hdfs hdfs dfs -mkdir /user/Mladen-Trampic-SRB-1989
 	
 * Use `teragen` to create a 500 MB file
-    *  ```
-	HADOOP_USER_NAME=hdfs hadoop jar /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/jars/hadoop-mapreduce-examples-2.6.0-cdh5.8.3.jar teragen 5242880 /user/Mladen-Trampic-SRB-1989/teragen-input
-	   ```
+```
+HADOOP_USER_NAME=hdfs hadoop jar /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/jars/hadoop-mapreduce-examples-2.6.0-cdh5.8.3.jar \
+                        teragen 5242880 /user/Mladen-Trampic-SRB-1989/teragen-input
+```
 	* Copy your partner's file to your target directory 
     * Let one partner use `distCp` on the command line
     * Let the other use BDR
