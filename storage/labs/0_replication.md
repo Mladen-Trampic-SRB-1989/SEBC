@@ -36,7 +36,7 @@ HADOOP_USER_NAME=hdfs hdfs dfs -ls /user/feanor21
 ```
 
 * Use `hdfs fsck <path> -files -blocks` on your source and target directories
-* Source:
+     * Source directory:
 ```
 [centos@ip-172-31-33-245 ~]$ HADOOP_USER_NAME=hdfs hdfs fsck /user/Mladen-Trampic-SRB-1989/teragen-input -files -blocks
 Connecting to namenode via http://ip-172-31-33-245.eu-central-1.compute.internal:50070
@@ -74,7 +74,7 @@ FSCK ended at Tue Oct 17 11:17:36 UTC 2017 in 2 milliseconds
 The filesystem under path '/user/Mladen-Trampic-SRB-1989/teragen-input' is HEALTHY
 ```
 
-* Target directory
+     * Target directory
 ```
 [centos@ip-172-31-33-245 ~]$ HADOOP_USER_NAME=hdfs hdfs fsck /user/feanor21/teragen-input -files -blocks
 Connecting to namenode via http://ip-172-31-33-245.eu-central-1.compute.internal:50070
