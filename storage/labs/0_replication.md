@@ -22,9 +22,9 @@ HADOOP_USER_NAME=hdfs hadoop jar /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2
 teragen 5242880 /user/Mladen-Trampic-SRB-1989/teragen-input
 ```
 
-	* Copy your partner's file to your target directory 
+* Copy your partner's file to your target directory 
 	
-	(Within issues i posted explanation why i can not distcp, due AWS Regions, using distcp inside cluster itself using hftp protocol towards hdfs protocol )
+(Within issues i posted explanation why i can not distcp, due AWS Regions, using distcp inside cluster itself using hftp protocol towards hdfs protocol )
 
 ```
 HADOOP_USER_NAME=hdfs hadoop distcp hftp://`hostname`:50070/user/Mladen-Trampic-SRB-1989/teragen-input hdfs://`hostname`:8020/user/feanor21
