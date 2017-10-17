@@ -25,12 +25,12 @@ hostname : ip-172-31-45-235
 Public DNS : ec2-54-93-246-117.eu-central-1.compute.amazonaws.com
 Public IP : 54.93.246.117
 Private IP : 172.31.45.41
-hostname : ip-1172.31.45.41
+hostname : ip-172-31-45-41
 ```
 
 ```
 Public DNS : ec2-54-93-252-215.eu-central-1.compute.amazonaws.com
 Public IP : 54.93.252.215
 Private IP : 172.31.41.58
-hostname : ip-172.31.41.58
+hostname : ip-172-31-41-58
 ```
