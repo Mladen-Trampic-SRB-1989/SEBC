@@ -6,7 +6,7 @@
   ```
   * Create a home HDFS directory for this user as well
   
-   *This has been done in previous exercise, but directory can be created with following:
+   * This has been done in previous exercise, but directory can be created with following:
    ```
    HADOOP_USER_NAME=hdfs hdfs dfs -mkdir /user/Mladen-Trampic-SRB-1989
    HADOOP_USER_NAME=hdfs hdfs dfs -chown -R Mladen-Trampic-SRB-1989:Mladen-Trampic-SRB-1989 /user/Mladen-Trampic-SRB-1989
