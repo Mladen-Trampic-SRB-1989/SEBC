@@ -1,4 +1,4 @@
-#Steps taken during Activation of HA for HDFS
+# Steps taken during Activation of HA for HDFS
 
 For the journal logs, i created directory /dfs/jn , where owner is hdfs:hadoop,
 since 2 of ZooKeeper nodes are also DataNodes, just to avoid having service writing to disks that are dedicated to HDFS service.
