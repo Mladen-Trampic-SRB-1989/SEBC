@@ -12,7 +12,7 @@ started job with command:
  nohup bash YARNtest.sh 2>&1 | tee nohup.out &
 ``` 
 
-## took a coffie, while it finishes. :)
+## took a coffee, while it was running. :)
 
 ```
 #!/bin/sh
