@@ -122,7 +122,7 @@
    [Security]
    # Use TLS and certificate validation when connecting to the CM server.
    
-   + use_tls=1
+   + this text is highlighted in green use_tls=1
    
    
    # The maximum allowed depth of the certificate chain returned by the peer.
