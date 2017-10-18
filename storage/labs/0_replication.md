@@ -26,8 +26,7 @@ teragen 5242880 /user/Mladen-Trampic-SRB-1989/teragen-input
 	
 (Within issues i posted explanation why i can not distcp, due AWS Regions, using distcp inside cluster itself using hftp protocol towards hdfs protocol )
 
-See issue 
-Mladen-Trampic-SRB-1989/SEBC#3
+See issue [https://github.com/Mladen-Trampic-SRB-1989/SEBC/issues/3](url)
 
 ```
 HADOOP_USER_NAME=hdfs hadoop distcp hftp://`hostname`:50070/user/Mladen-Trampic-SRB-1989/teragen-input hdfs://`hostname`:8020/user/feanor21
