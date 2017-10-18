@@ -57,7 +57,7 @@
   ```
    curl -X GET -u "username:password" http://ec2-54-93-198-167.eu-central-1.compute.amazonaws.com:7180/api/v14/cm/version
   ```
-      * Output : 
+    * Output : 
 	```
 	 {
          "buildTimestamp": "20170627-1506",
