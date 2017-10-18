@@ -3,7 +3,7 @@
   *Configured all up to Level 3 TLS
   
 
-  ```diff
+  ```bash
    [General]
    # Hostname of the CM server.
    server_host=ip-172-31-33-245.eu-central-1.compute.internal
@@ -121,8 +121,8 @@
    
    [Security]
    # Use TLS and certificate validation when connecting to the CM server.
+   use_tls=1
    
-   **use_tls=1**
      
    # The maximum allowed depth of the certificate chain returned by the peer.
    # The default value of 9 matches the default specified in openssl's
