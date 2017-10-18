@@ -1,6 +1,6 @@
 `For username and password used generics, username and password should be from existing CM user, in case of starting/stoping user must have privileges to execute.`
 
-*Upgrade Cloudera Manager
+* Upgrade Cloudera Manager
   * Backup on CM node db.properties file
   ```
    [root@ip-172-31-33-245 ~]# cp /etc/cloudera-scm-server/db.properties ~/
