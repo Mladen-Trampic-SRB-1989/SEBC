@@ -1,6 +1,6 @@
 * What is ubertask optimization?
   
-  ![Image of ubertask] (../screenshots/ubertask_optimisation.PNG)
+  ![Image of ubertask](../screenshots/ubertask_optimisation.PNG)
   
 * Where in CM is the Kerberos Security Realm value displayed?
 * Which CDH service(s) host a property for enabling Kerberos authentication?
