@@ -1,5 +1,6 @@
-# Upgrade Cloudera Manager
+`For username and password used generics, username and password should be from existing CM user, in case of starting/stoping user must have privileges to execute.`
 
+*Upgrade Cloudera Manager
   * Backup on CM node db.properties file
   ```
    [root@ip-172-31-33-245 ~]# cp /etc/cloudera-scm-server/db.properties ~/
@@ -42,3 +43,19 @@
      2017-10-18 10:06:20,938 INFO WebServerImpl:org.mortbay.log: Started SelectChannelConnector@0.0.0.0:7180
     ```
   * Restart cluster services.
+ 
+* Use the API on the command line to:
+  * Report the latest available version of the API
+  ```
+   curl -X GET -u "username:password" http://ec2-54-93-198-167.eu-central-1.compute.amazonaws.com:7180/api/version
+  ```
+  * Report the CM version
+  ```
+   curl -X GET -u "username:password" http://ec2-54-93-198-167.eu-central-1.compute.amazonaws.com:7180/api/v14/cm/version
+  ```
+  * List all CM users
+  ```
+   curl -X GET -u "username:password" http://ec2-54-93-198-167.eu-central-1.compute.amazonaws.com:7180/api/v14/users
+  ```
+  * Report the database server in use by CM
+
