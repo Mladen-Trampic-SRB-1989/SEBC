@@ -304,7 +304,7 @@ In the end, after fixing problems, did all configs for TLS level 3.
  keytool -import -alias {filename without .cer extension} -file {full filename with extension} -keystore $JAVA_HOME/jre/lib/security/jssecacerts -storepass cloudera
 ```
 
-![Image of CMSettings](../screnshots/TLS.PNG
+![Image of CMSettings](../screnshots/TLS.PNG)
 
 * Restart Cloudera Manager Server
 ```bash
