@@ -12,16 +12,16 @@
   
 * How do you upgrade the CM agents?
 
-  ![Image of Ubertask](../screnshots/upgrade_cloudera_agents.PNG)
+  ![Image of Upgrade](../screnshots/upgrade_cloudera_agents.PNG)
 
 * Give the `tsquery` statement used to chart Hue's CPU utilization?
 
-  ![Image of Ubertask](../screnshots/hue_cpu_query.PNG)
+  ![Image of Tsquery](../screnshots/hue_cpu_query.PNG)
 
 * Name all the roles that make up the Hive service
 
-  ![Image of Ubertask](../screnshots/hive_services.PNG)
+  ![Image of HiveRoles](../screnshots/hive_services.PNG)
 
 * What steps must be completed before integrating Cloudera Manager with Kerberos?
 
-  ![Image of Ubertask](../screnshots/steps_pre_enabling_kerberos.PNG)
+  ![Image of StepsPreKerberos](../screnshots/steps_pre_enabling_kerberos.PNG)
