@@ -49,15 +49,61 @@
   ```
    curl -X GET -u "username:password" http://ec2-54-93-198-167.eu-central-1.compute.amazonaws.com:7180/api/version
   ```
+    * Output : 
+	```
+	 14
+	```
   * Report the CM version
   ```
    curl -X GET -u "username:password" http://ec2-54-93-198-167.eu-central-1.compute.amazonaws.com:7180/api/v14/cm/version
   ```
+      * Output : 
+	```
+	 {
+         "buildTimestamp": "20170627-1506",
+         "buildUser": "jenkins",
+         "gitHash": "23506bb4e114dd460bdac64c57a672e6be631907",
+         "snapshot": false,
+         "version": "5.9.3"
+     }
+	```
   * List all CM users
   ```
    curl -X GET -u "username:password" http://ec2-54-93-198-167.eu-central-1.compute.amazonaws.com:7180/api/v14/users
   ```
+    * Output : 
+	```
+	 {
+         "items": [
+             {
+                 "name": "Mladen-Trampic-SRB-1989",
+                 "roles": [
+                     "ROLE_ADMIN"
+                 ]
+             },
+             {
+                 "name": "admin",
+                 "roles": [
+                     "ROLE_LIMITED"
+                 ]
+             },
+             {
+                 "name": "minotaur",
+                 "roles": [
+                     "ROLE_CONFIGURATOR"
+                 ]
+             }
+         ]
+     }
+	```
   * Report the database server in use by CM
   ```
    curl -X GET -u "username:password" http://ec2-54-93-198-167.eu-central-1.compute.amazonaws.com:7180/api/v14/cm/scmDbInfo
   ```
+    * Output : 
+	```
+	 {
+         "embeddedDbUsed": false,
+         "scmDbType": "MYSQL"
+     }
+   	```
