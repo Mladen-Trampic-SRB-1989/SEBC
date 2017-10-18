@@ -118,8 +118,9 @@ dns_resolution_collection_timeout_seconds=30
 
 [Security]
 # Use TLS and certificate validation when connecting to the CM server.
-use_tls=1
-- this text is highlighted in red
+
++use_tls=1
+
 
 # The maximum allowed depth of the certificate chain returned by the peer.
 # The default value of 9 matches the default specified in openssl's
@@ -141,7 +142,8 @@ max_cert_depth=9
 #
 # Note that if neither verify_cert_file or verify_cert_dir is set, certificate
 # verification will not be performed.
-verify_cert_file=/opt/cloudera/security/x509/cmhost-cert.pem
+
++verify_cert_file=/opt/cloudera/security/x509/cmhost-cert.pem
 
 # Directory containing CA certificates in PEM format. The files each contain one
 # CA certificate. The files are looked up by the CA subject name hash value,
