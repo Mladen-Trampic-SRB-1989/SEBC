@@ -122,10 +122,8 @@
    [Security]
    # Use TLS and certificate validation when connecting to the CM server.
    
-   **`use_tls=1`**
-   
-   
-   
+   **use_tls=1**
+     
    # The maximum allowed depth of the certificate chain returned by the peer.
    # The default value of 9 matches the default specified in openssl's
    # SSL_CTX_set_verify.
