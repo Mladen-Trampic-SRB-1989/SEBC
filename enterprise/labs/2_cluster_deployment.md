@@ -1,7 +1,7 @@
 * Browse or use curl on the endpoint ./api/v2/cm/deployment
   * Command used :
   ```
-   curl -X GET -u "`:bowtie:`:`:bowtie:`" -i http://ec2-54-93-198-167.eu-central-1.compute.amazonaws.com:7180/api/v2/cm/deployment
+   curl -X GET -u "```:bowtie:```:```:bowtie:```" -i http://ec2-54-93-198-167.eu-central-1.compute.amazonaws.com:7180/api/v2/cm/deployment
   ```
   * Output :
   ```
