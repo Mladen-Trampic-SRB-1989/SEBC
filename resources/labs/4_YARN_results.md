@@ -1,3 +1,5 @@
+# See issue [#4](/../../issues/4)
+
 # Slowest job parameters setup:
 * mapreduce.job.maps=2
 * mapreduce.map.memory.mb=512
