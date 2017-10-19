@@ -1,4 +1,4 @@
-#Contents of krb5.conf file
+# Contents of krb5.conf file
 
 ```
 [libdefaults]
