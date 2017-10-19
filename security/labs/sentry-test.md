@@ -1,4 +1,4 @@
-#Sentry Test Lab
+# Sentry Test Lab
 
 ```
 beeline> !connect jdbc:hive2://localhost:10000/default;principal=hive/ip-172-31-33-245.eu-central-1.compute.internal@MLADEN-TRAMPIC-SRB-1989.SG
