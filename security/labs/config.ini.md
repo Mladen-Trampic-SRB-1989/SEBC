@@ -1,6 +1,6 @@
 # Config.ini file
   
-  * Configured all up to Level 3 TLS, two parameters to note inside config.ini file.
+  * Configured all up to Level 3 TLS, parameters to note inside config.ini file.
     * use_tls
 	* verify_cert_file
 	* client_key_file
