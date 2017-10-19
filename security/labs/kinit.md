@@ -1,5 +1,5 @@
 # Security kinit.md file
-  * he kinit command you use to authenticate your test use ( In my use-case my github handle Mladen-Trampic-SRB-1989 )
+  * The kinit command you use to authenticate your test use ( In my use-case my github handle Mladen-Trampic-SRB-1989 )
     * my default realm is setted to be : MLADEN-TRAMPIC-SRB-1989.SG, therefore command was quite simple:
     ```
      [root@ip-172-31-33-245 ~]# kinit Mladen-Trampic-SRB-1989
