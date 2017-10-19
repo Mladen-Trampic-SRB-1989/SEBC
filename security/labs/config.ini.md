@@ -3,6 +3,10 @@
   * Configured all up to Level 3 TLS, two parameters to note inside config.ini file.
     * use_tls
 	* verify_cert_file
+	* client_key_file
+	* client_keypw_file
+	* client_cert_file
+  * Besides config.ini file, explanation of setting up TLS.
 
     ```bash
      [General]
@@ -304,6 +308,18 @@ In the end, after fixing problems, did all configs for TLS level 3.
  keytool -import -alias {filename without .cer extension} -file {full filename with extension} -keystore $JAVA_HOME/jre/lib/security/jssecacerts -storepass cloudera
 ```
 
+* For Agent Authentication, replace parameters:
+  * client_key_file
+  ```
+   sed -i "s/#\ client_key_file=/client_key_file=\/opt\/cloudera\/security\/jks\/$(hostname -f)-server.jks/g" /etc/cloudera-scm-agent/config.ini | grep client_key
+  ```
+  * make and link inside config.ini client_keypw_file
+  ```
+   echo "cloudera" > /etc/cloudera-scm-agent/agentkey.pw
+   sed -i "s/#\ client_keypw_file=/client_keypw_file=\/etc\/cloudera-scm-agent\/agentkey.pw/g" /etc/cloudera-scm-agent/config.ini
+   sed -i "s/#\ client_cert_file=/client_cert_file=\/opt\/cloudera\/security\/x509\/$(hostname -f)-server.pem/g" /etc/cloudera-scm-agent/config.ini
+  ```
+
 ![Image of CMSettings](../screnshots/TLS.PNG)
 
 * Restart Cloudera Manager Server
@@ -316,3 +332,11 @@ In the end, after fixing problems, did all configs for TLS level 3.
  systemctl restart cloudera-scm-agent
 ```
  
+ # IMPORTANT NOTE
+ 
+ * TLS Level 2 works, TLS Level 3 didn't work. 
+ ```
+  What i am assuming is that , all keys msy be signed by certificate authority, and loaded into JKS, while mine are loaded into mutual truststore, but are not signed by same authority.
+ ```
+ * Working TLS Level 2
+ ![Image of TLS_Level_2](../screnshots/tls_level_2.PNG)
