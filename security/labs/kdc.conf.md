@@ -1,3 +1,6 @@
+# Content kdc.conf file
+
+```
 [libdefaults]
 default_realm = MLADEN-TRAMPIC-SRB-1989.SG
 allow_weak_crypto = true
@@ -17,3 +20,4 @@ allow_weak_crypto = true
   max_renewable_life = 7d
   default_principal_flags = +preauth, +forwardable
  }
+```

@@ -1,3 +1,6 @@
+#Contents of krb5.conf file
+
+```
 [libdefaults]
 default_realm = MLADEN-TRAMPIC-SRB-1989.SG
 dns_lookup_kdc = false
@@ -16,3 +19,4 @@ MLADEN-TRAMPIC-SRB-1989.SG = {
 kdc = ip-172-31-33-245.eu-central-1.compute.internal
 admin_server = ip-172-31-33-245.eu-central-1.compute.internal
 }
+```
