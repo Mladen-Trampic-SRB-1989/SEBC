@@ -235,7 +235,7 @@
      #cloudera_postgresql_jdbc_jar=
     ```
 
-# See issue [#4](/../../issues/4)
+# See issue [#6](/../../issues/6)
 During lab i've faced some typos, and missconfigurations. On top of which caching of my browser produced additional trouble when i tried to reverse to configuration pre TLS Level 1 exercise.
 That led me to some desperate measures, like manually adding inserts inside scm.CONFIGS table, in order to get back into state where Cloudera Manager was working in HTTPS mode.
 Misconfigurations led to problem, of Cloudera Agents not being able to talk to CM Server.
