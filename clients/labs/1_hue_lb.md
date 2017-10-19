@@ -5,8 +5,8 @@ This is an demo of two HUE instances, where we are connecting to them through lo
 In demo, we will stop one instance of HUE, and we can see from tailing of access log, that on that instance
 that there will be no activities. And we will be connecting to same url.
 
-<<<<<<< HEAD
+
 ![Demo](https://github.com/Mladen-Trampic-SRB-1989/SEBC/blob/master/clients/HUE%20HA%20Load%20Balancing/Exercise-HUE-HA.gif?raw=true)
+
 =======
-![ ] (https://github.com/Mladen-Trampic-SRB-1989/SEBC/tree/master/clients/HUE%20HA%20Load%20Balancing/Exercise-HUE-HA.gif)
->>>>>>> 449e7370724d3248544bce9bd8d3b381d8e4eccb
+
