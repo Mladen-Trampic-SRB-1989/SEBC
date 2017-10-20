@@ -1,6 +1,41 @@
 * List the cloud provider you are using (AWS, GCE, Azure, other)
 ```
 Amazon Web Services
+
+Node: 1
+Public_Hostname: ec2-54-229-56-204.eu-west-1.compute.amazonaws.com
+Public_IP: 54.229.56.204
+Private_Hostname: ip-172-31-34-39.eu-west-1.compute.internal
+Private_IP: 172.31.34.39
+
+
+Node: 2
+Public_Hostname: ec2-54-171-75-58.eu-west-1.compute.amazonaws.com
+Public_IP: 54.171.75.58
+Private_Hostname: ip-172-31-38-249.eu-west-1.compute.internal
+Private_IP: 172.31.38.249
+
+
+Node: 3
+Public_Hostname: ec2-54-229-144-14.eu-west-1.compute.amazonaws.com
+Public_IP: 54.229.144.14
+Private_Hostname: ip-172-31-43-139.eu-west-1.compute.internal
+Private_IP: 172.31.43.139
+
+
+Node: 4
+Public_Hostname: ec2-54-171-255-192.eu-west-1.compute.amazonaws.com
+Public_IP: 54.171.255.192
+Private_Hostname: ip-172-31-41-191.eu-west-1.compute.internal
+Private_IP: 172.31.41.191
+
+
+Node: 5
+Public_Hostname: ec2-34-253-213-3.eu-west-1.compute.amazonaws.com
+Public_IP: 34.253.213.3
+Private_Hostname: ip-172-31-40-178.eu-west-1.compute.internal
+Private_IP: 172.31.40.178
+
 ```
 * List the Linux release you have chosen 
 ```
