@@ -87,3 +87,26 @@ extras/7/x86_64                                                                 
 updates/7/x86_64                                                                                     CentOS-7 - Updates                                                                                        741
 repolist: 10,559
 ```
+
+* Sub task, create groups, add users:
+```
+groupadd usa
+groupadd emea
+useradd -u 2000 ernest
+useradd -u 3000 siwicki
+usermod -aG usa ernest
+usermod -aG emea siwicki
+```
+* List users siwicki nad ernest from /etc/passwd file
+```
+[root@ip-172-31-34-39 ~]# grep "ernest\|siwicki" /etc/passwd
+ernest:x:2000:2000::/home/ernest:/bin/bash
+siwicki:x:3000:3000::/home/siwicki:/bin/bash
+```
+
+* List groups emea,usa from /etc/group file
+```
+[root@ip-172-31-34-39 ~]# grep "emea\|usa" /etc/group
+usa:x:1001:ernest
+emea:x:1002:siwicki
+```
