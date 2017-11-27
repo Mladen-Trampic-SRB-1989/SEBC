@@ -69,3 +69,4 @@ Found 7 items
 -rw-r--r--   3 ernest hadoop  853333300 2017-10-20 09:29 /user/ernest/tgen512m/part-m-00004
 -rw-r--r--   3 ernest hadoop  853333300 2017-10-20 09:29 /user/ernest/tgen512m/part-m-00005
 ```
+@mfernest: block report missing
