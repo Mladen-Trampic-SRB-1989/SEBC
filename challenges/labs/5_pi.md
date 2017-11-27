@@ -3,6 +3,8 @@
   ```
    [siwicki@ip-172-31-43-139 ~]$ time hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar pi 10 100 | tee siwickiPi.log
   ```
+  @mfernest: Information that shows this job ran in a kerberized cluster has been left out.
+  
   * Output:
   ```
    17/10/20 10:13:43 INFO mapreduce.Job: Job job_1508493587968_0006 completed successfully
