@@ -9,6 +9,8 @@ drwxrwxr-x   - hue     hue             0 2017-10-20 09:15 /user/hue
 drwxrwxr-x   - oozie   oozie           0 2017-10-20 09:15 /user/oozie
 drwxr-xr-x   - siwicki hadoop          0 2017-10-20 09:17 /user/siwicki
 ```
+You don't need to assume `hdfs` privileges to list directories. 
+```
 * The output from the CM API call ../api/v14/hosts
   * Command:
   ```
